@@ -21,6 +21,13 @@ int main()
 	int item;
 	UnsortedList<int> list;
 
+	list.AddItem(5);
+	list.AddItem(7);
+	list.AddItem(9);
+	list.AddItem(6);
+	list.DeleteItem(7);
+
+
 	bool found;
 
 	// Prompt for file names, read file names, and prepare files
@@ -92,7 +99,7 @@ int main()
             }
 		}
 		else if (command == "MakeEmpty") {
-			out << "Make list empty." << endl;
+			cout << "Make list empty." << endl;
 			outFile << "Make list empty." << endl;
 			list.MakeEmpty();
 		}
