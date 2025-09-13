@@ -28,7 +28,7 @@ bool UnsortedList<T>::IsFull() const {
     try {
         Node *testNode = new Node(); // try to make a test node
         delete testNode;             // we're good, delete the test node
-    } catch (std::bad_alloc &e) {    // bad allocation, out of memory
+    } catch (std::bad_alloc &e) {    // bad allocation it is out of memory
         return true;
     }
 
